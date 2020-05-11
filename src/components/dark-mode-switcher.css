@@ -1,0 +1,28 @@
+:root {
+  --color-background: #fff;
+  --color-foreground: #000;
+  --color-primary: theme("colors.indigo.600");
+}
+
+html[lights-out] {
+  --color-background: #000;
+  --color-foreground: #fff;
+  --color-primary: theme("colors.indigo.400");
+}
+
+html[lights-out] .sun {
+  display: none;
+}
+
+html[lights-out] .moon {
+  display: block;
+}
+
+.moon {
+  display: none;
+}
+
+* {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
